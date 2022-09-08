@@ -12,8 +12,8 @@ const counter = {
 
 
 
-const decrBtn = document.querySelector('.decr');
-const incrBtn = document.querySelector('.incr');
+const decrBtn = document.querySelector('[data-action = "decrement"]');
+const incrBtn = document.querySelector('[data-action = "increment"]');
 const valueEl = document.querySelector('#value');
 
 
