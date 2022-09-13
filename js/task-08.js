@@ -1,12 +1,12 @@
 const formRef = document.querySelector('.login-form');
 console.log(formRef);
 
-const handleSubmit = (event) => {
-    event.preventDefault();
+const handleSubmit = (input) => {
+    input.preventDefault();
 
     const {
         elements: {email, password},
-    } = event.currentTarget;
+    } = input.currentTarget;
    if (email.value === "" || password.value === "") {
        alert("Заповни пусті поля!");
       

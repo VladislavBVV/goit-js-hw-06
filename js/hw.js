@@ -172,6 +172,84 @@ list2.insertAdjacentHTML("beforeend", mark1);
 
 
 
+// кнопки
 
+// const singBtn = document.querySelector('#single');
+// const multBtn = document.querySelector('#multiple');
+// const buttons = document.querySelector(".buttons");
+// const text = document.querySelector("h3");
+
+// console.log(singBtn);
+// console.log(multBtn);
+// console.log(text);
+
+// singBtn.style.backgroundColor = 'teal';
+// multBtn.style.backgroundColor = "teal";
+// text.style.textTransform = 'uppercase';
+// buttons.style.display = 'flex';
+
+// const singleClick = () => {
+//     console.log('click on single')
+//     text.textContent = "нажал на single";
+// };
+
+// singBtn.addEventListener("click", singleClick);
+
+
+// const firstCallback = () => {
+//     console.log("click on multiple");
+//     text.textContent = "нажал на multiple";
+// };
+
+
+// const secondCallback = () => {
+//   console.log("click on multiple 2-ой раз");
+//   text.textContent = "нажал на multiple 2-ой раз";
+// };
+
+// const thirdCallback = () => {
+//   console.log("click on multiple 3-ий раз");
+//   text.textContent = "нажал на multiple 3-ий раз";
+// };
+
+
+// multBtn.addEventListener("click", firstCallback);
+// multBtn.addEventListener("click", secondCallback);
+// multBtn.addEventListener("click", thirdCallback);
+
+// const abtn = document.querySelector('[data-action="add"]');
+// const rbtn = document.querySelector('[data-action="remove"]');
+// const b = document.querySelector('#btn');
+
+// const handleClick = () => {
+//     console.log('callback');
+// };
+
+// abtn.addEventListener = ('click', () => {
+//     b.addEventListener('click', handleClick);
+//     console.log("click event listener was added to btn");
+// });
+
+// rbtn.addEventListener = ('click', () => {
+//     b.removeEventListener('click', handleClick);
+//     console.log("click event listener was removed from btn");
+// });
+
+// abtn.addEventListener("click", handleClick);
+// rbtn.addEventListener("click", singleClick);
+
+
+const butt = document.querySelector('.butt');
+console.log(butt);
+
+const handleClick = event => {
+    console.log(event);
+    console.log("event:", event);
+    console.log("event type:", event.type);
+    console.log("currentTarget:", event.currentTarget);
+    console.log('click');
+};
+
+butt.addEventListener("click", handleClick);
     
 
