@@ -8,7 +8,7 @@ const handleSubmit = (input) => {
         elements: {email, password},
     } = input.currentTarget;
    if (email.value === "" || password.value === "") {
-       alert("Заповни пусті поля!");
+      return alert("Заповни пусті поля!");
       
    }
     const userData = {
